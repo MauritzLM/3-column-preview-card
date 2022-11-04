@@ -21,6 +21,8 @@ h2 {
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
+    margin-bottom: .7em;
+    margin-top: .75em;
 
 }
 
@@ -42,8 +44,8 @@ section {
 
 .sedans {
     background-color: hsl(31, 77%, 52%);
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
 }
 
 .suvs {
@@ -52,8 +54,8 @@ section {
 
 .luxury {
     background-color: hsl(179, 100%, 13%);
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: .8em;
+    border-bottom-right-radius: .8em;
 }
 
 /*  buttons  */
@@ -63,6 +65,7 @@ section button {
     padding: .8em 2em .8em 2em;
     font-family: inherit;
     margin-top: 1em;
+    margin-bottom: .4em;
     cursor: pointer;
     text-transform: capitalize;
     font-size: 1.5rem;
@@ -89,7 +92,7 @@ button:hover {
 /*  Footer  */
 
 footer {
-    font-size: 11px;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -98,7 +101,7 @@ footer a {
 }
 
 /*  Media Queries  */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
     body {
         display: flex;
@@ -119,16 +122,15 @@ footer a {
 
     }
 
-    .sedans,
+    .sedans {
+        border-radius: .8em 0 0 .8em;
+    }
+
     .luxury {
-        border-radius: 0;
+        border-radius: 0 .8em .8em 0;
     }
 
     section button {
-        margin-top: 5em;
-    }
-
-    h2 {
-        margin-bottom: .75em;
+        margin-top: 4.8em;
     }
 }

@@ -59,7 +59,7 @@ section {
 }
 
 /*  buttons  */
-section button {
+section a {
     border: 2px solid hsl(0, 0%, 100%, 0);
     border-radius: 2em;
     padding: .8em 2em .8em 2em;
@@ -69,24 +69,28 @@ section button {
     cursor: pointer;
     text-transform: capitalize;
     font-size: 1.5rem;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 100%);
+    display: inline-block;
+    transition: all .2s ease-in;
 }
 
-.sedans button {
+.sedans a {
     color: hsl(31, 77%, 52%);
 }
 
-.suvs button {
+.suvs a {
     color: hsl(184, 100%, 22%);
 }
 
-.luxury button {
+.luxury a {
     color: hsl(179, 100%, 13%);
 }
 
-button:hover {
+a:hover {
     background-color: hsla(0, 0%, 100%, 0);
-    border: 2px solid hsla(0, 0%, 100%, 0.75);
-    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
 /*  Footer  */
@@ -98,6 +102,12 @@ footer {
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+    border: none;
 }
 
 /*  Media Queries  */
@@ -130,7 +140,7 @@ footer a {
         border-radius: 0 .8em .8em 0;
     }
 
-    section button {
+    section a {
         margin-top: 4.8em;
     }
 }
